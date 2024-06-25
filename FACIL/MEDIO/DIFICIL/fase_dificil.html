@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Dificil</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>Quiz Modo Dificil:</h1>
+
+        <div class="question">
+            <strong>01.</strong> Selecione a alternativa que descreve o Mutualismo, o Comensalismo e o Parasitismo, respectivamente: <br>
+            <div class="options">
+                <label><input type="radio" name="q1" value="errada">Relação em que apenas um organismo se beneficia porém o outro não é afetado; Relação em que ambos os organismos se beneficiam; Relação em que um organismo se beneficia enquanto um é prejudicado.</label>
+                <label><input type="radio" name="q1" value="errada">Relação em que um organismo se beneficia enquanto um é prejudicado; Relação em que ambos os organismos se beneficiam; Relação em que apenas um organismo se beneficia porém o outro não é afetado;</label>
+                <label><input type="radio" name="q1" value="correta">Relação em que ambos os organismos se beneficiam; Relação em que apenas um organismo se beneficia, porém o outro não é afetado; Relação em que um organismo se beneficia enquanto um é prejudicado.</label>
+                <label><input type="radio" name="q1" value="errada">Relação em que ambos os organismos se beneficiam; Relação em que um organismo se beneficia enquanto um é prejudicado; Relação em que apenas um organismo se beneficia, porém o outro não é afetado;</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <strong>02.</strong> Escolha a imagem que representa corretamente o cloroplasto:
+            <div class="options">
+                <label><input type="radio" name="q2" value="errada"> <img src="peroxissomo.jpg" alt="peroxissomo"></label>
+                <label><input type="radio" name="q2" value="correta"><img src="cloroplasto.jpg" alt="cloroplasto"></label>
+                <label><input type="radio" name="q2" value="errada"> <img src="golgi.jpg" alt="golgi"></label>
+            </div>
+        </div>
+
+        <div class="question">
+            <strong>03.</strong> Escolha verdadeiro ou falso sobre a seguinte afirmação: "A teoria da panspermia sugere que a vida na Terra pode ter se originado a partir de microrganismos trazidos por meteoritos ou cometas."
+            <div class="options">
+                <label><input type="radio" name="q3" value="correta">Verdadeiro</label>
+                <label><input type="radio" name="q3" value="errada">Falso</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <strong>04.</strong> Escolha verdadeiro ou falso sobre a seguinte afirmação: "O transporte ativo requer gasto de energia, enquanto o transporte passivo não requer."
+            <div class="options">
+                <label><input type="radio" name="q4" value="correta">Verdadeiro</label>
+                <label><input type="radio" name="q4" value="errada">Falso</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <strong>05.</strong> Qual das seguintes moléculas é a principal componente estrutural das membranas celulares?
+            <div class="options">
+                <label><input type="radio" name="q5" value="correta">Fosfolipídios</label>
+                <label><input type="radio" name="q5" value="errada">DNA</label>
+                <label><input type="radio" name="q5" value="errada">Polissacarídeos</label>
+                <label><input type="radio" name="q5" value="errada">Proteínas</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <strong>06.</strong> "Está presente em proteínas, ácidos nucleicos e outras moléculas orgânicas." Esta afirmação se refere ao:
+            <div class="options">
+                <label><input type="radio" name="q6" value="errada">Carbono</label>
+                <label><input type="radio" name="q6" value="correta">Nitrogênio</label>
+                <label><input type="radio" name="q6" value="errada">Fósforo</label>
+                <label><input type="radio" name="q6" value="errada">Oxigênio</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <strong>07.</strong> Sobre o transporte ativo primário, qual das seguintes afirmações está correta?
+            <div class="options">
+                <label><input type="radio" name="q7" value="errada">Ele depende exclusivamente da difusão facilitada através de canais de membrana.</label>
+                <label><input type="radio" name="q7" value="correta">Ele utiliza a energia liberada pela hidrólise do ATP para mover íons e moléculas contra seus gradientes de concentração.</label>
+                <label><input type="radio" name="q7" value="errada">Ele ocorre passivamente, sem a necessidade de energia, e é mediado por proteínas transportadoras específicas.</label>
+                <label><input type="radio" name="q7" value="errada">Ele envolve a movimentação de água através da membrana celular por osmose, sem a necessidade de proteínas transportadoras.</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <strong>08.</strong> Qual das seguintes afirmações sobre os componentes químicos da célula é correta?
+            <div class="options">
+                <label><input type="radio" name="q8" value="errada">Os ácidos nucleicos são responsáveis pela formação de enzimas que catalisam reações metabólicas.</label>
+                <label><input type="radio" name="q8" value="errada">As proteínas são compostas por nucleotídeos, que formam cadeias longas e complexas.</label>
+                <label><input type="radio" name="q8" value="correta">Os carboidratos servem principalmente como fonte de energia e como componentes estruturais nas células.</label>
+                <label><input type="radio" name="q8" value="errada">Os lipídios são compostos por aminoácidos que formam estruturas essenciais para a membrana celular.</label>
+            </div>
+        </div>    
+
+        <button onclick="mostrarResultado()">Ver Resultado</button>
+
+        <div class="result">
+            <h2>Resultado do Quiz</h2>
+            <p>Quantidade de acertos: <span id="acertos">0</span></p>
+            <p>Quantidade de erros: <span id="erros">0</span></p>
+            <button onclick="refazerQuiz()">Refazer a Fase</button>
+        </div>
+    </div>
+
+    <script>
+        function mostrarResultado() {
+            let acertos = 0;
+            let erros = 0;
+            const respostasCorretas = [];
+
+            for (let i = 1; i <= 8; i++) {
+                const resposta = document.querySelector(`input[name="q${i}"]:checked`);
+                const opcoes = document.getElementsByName(`q${i}`);
+                if (resposta && resposta.value === 'correta') {
+                    acertos++;
+                    respostasCorretas.push(`Pergunta ${i}: ${resposta.parentNode.textContent.trim()}`);
+                    resposta.parentNode.classList.add('correct');
+                } else {
+                    erros++;
+                    if (resposta) {
+                        resposta.parentNode.classList.add('incorrect');
+                    }
+                    opcoes.forEach(opcao => {
+                        if (opcao.value === 'correta') {
+                            opcao.parentNode.classList.add('correct');
+                        }
+                    });
+                }
+            }
+
+            document.getElementById('acertos').textContent = acertos;
+            document.getElementById('erros').textContent = erros;
+
+            document.querySelector('.result').style.display = 'block';
+        }
+
+        function refazerQuiz() {
+            const inputs = document.querySelectorAll('input[type="radio"]');
+            inputs.forEach(input => {
+                input.checked = false;
+                input.parentNode.classList.remove('correct', 'incorrect');
+            });
+
+            document.querySelector('.result').style.display = 'none';
+        }
+    </script>
+</body>
+</html>

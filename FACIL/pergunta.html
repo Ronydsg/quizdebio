@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fácil</title>
+    <link rel="stylesheet" href="pergunta.css">
+    <script src="pergunta.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Quiz de Biologia</h1>
+      </header>
+      <main>
+        <!-- QUIZZ CONTAINER -->
+        <div id="quizz-container">
+          <p id="question">
+            <span id="question-number">1</span> &#8212;
+            <span id="question-text">Qual é a unidade de medida para metros?</span>
+          </p>
+          <div id="answers-box">
+            <button><span class="btn-letter"></span> <span class="question-answer"></span></button>
+            <button><span class="btn-letter"></span> <span class="question-answer"></span></button>
+            <button><span class="btn-letter"></span> <span class="question-answer"></span></button>
+            <button><span class="btn-letter"></span> <span class="question-answer"></span></button>
+          </div>
+        </div>
+
+        <!-- SCORE BOARD -->
+        <div id="score-container" class="hide">
+          <h2>Parabéns</h2>
+          <p id="display-score"><span>90</span>%</p>
+          <p>
+            Você acertou <span id="correct-answers">0</span> de
+            <span id="questions-qty">10</span> perguntas
+          </p>
+          <button id="restart">Tentar Denovo?</button>
+          <div id="back-to-start-container" class="hide">
+          <a href="MEDIO/fase_media.html"><button id="back-to-start" class="styled-button">Próximo Nivel</button></a>
+          </div>
+        </div>
+   
+      
+        <button class="answer-template hide">
+          <span class="btn-letter"></span> <span class="question-answer"></span>
+        </button>
+      </main>
+      <footer>
+      </footer>
+    </div>
+  </body>
+</html>

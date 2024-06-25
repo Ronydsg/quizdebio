@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Quiz de Biologia</title>
+  <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      background-color: #f2f2f2;
+      font-family: 'Archivo Black', sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      height: 100vh;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .content {
+      max-width: 50%;
+      padding: 20px;
+      text-align: center;
+      z-index: 2;
+      position: relative;
+    }
+
+    .title {
+      font-size: 72px;
+      margin-bottom: 10px;
+      line-height: 1.2;
+    }
+
+    .quiz {
+      color: #e0218a;
+    }
+
+    .description {
+      font-family: 'Mulish', sans-serif;
+      font-size: 20px;
+      font-weight: 400;
+      color: #666;
+      margin-top: 20px;
+      margin-bottom: 30px;
+    }
+
+    .start-button {
+      font-family: 'Mulish', sans-serif;
+      font-size: 24px;
+      font-weight: 600;
+      display: inline-block;
+      padding: 15px 50px;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 50px;
+      overflow: hidden;
+      position: relative;
+      transition: background-color 0.3s ease;
+      z-index: 2;
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+      background-image: linear-gradient(to right, red, yellow, blue);
+      background-size: 200% auto;
+      transition: background-position 0.3s ease;
+    }
+
+    .start-button:hover {
+      background-position: right center;
+      color: #fff;
+      box-shadow: 0 15px 20px rgba(0, 0, 0, 0.15), 0 5px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .image-container {
+      margin-top: 20px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      z-index: 1;
+      position: relative;
+    }
+
+    .image-container img {
+      max-width: 25%;
+      height: 25%;
+      border-radius: 10px;
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .footer {
+      font-family: 'Mulish', sans-serif;
+      font-size: 14px;
+      color: #999;
+      text-align: center;
+      margin-top: 20px;
+      width: 100%;
+    }
+  </style>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="content">
+    <div class="title">
+      <span class="quiz">QUIZ</span><br>
+      BIOLOGIA
+    </div>
+
+    <div class="description">
+      As perguntas são divididas em 3 níveis: fácil, médio e difícil.<br>
+      São todas alternativas, e você pode tentar quantas vezes quiser!<br>
+      Esperamos que aprenda e, sobretudo, divirta-se!
+    </div>
+
+    <a href="FACIL/pergunta.html" class="start-button">Começar Quiz</a>
+
+    <div class="footer">
+      Desenvolvido por Breno P. Silva, Kaylane F. Souza, Manuely T. Santos e Rony S. Gonçalves
+    </div>
+  </div>
+
+  <div class="image-container">
+    <img src="./img/bacterias.png" alt="Imagem de Bactérias">
+  </div>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>
